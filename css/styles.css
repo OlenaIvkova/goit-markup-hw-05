@@ -681,7 +681,7 @@ transform: translateY(-50%);
 .subscribe-footer {
     width: 1440px;
     height: 312px;
-    display: flex;
+    /* display: flex; */
 }
 
 .subscribe-email {
