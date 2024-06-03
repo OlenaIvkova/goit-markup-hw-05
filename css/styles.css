@@ -552,7 +552,7 @@ top: 50%;
 transform: translateY(-50%);
 }
 
-.button-close {
+.modal-button-close {
     border-radius: 4px;
     width: 24px;
     height: 24px;
@@ -694,7 +694,7 @@ transform: translateY(-50%);
     padding-bottom: 16px;
 }
 
-.text-subscribe {
+.subscribe {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
