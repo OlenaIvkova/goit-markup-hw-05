@@ -134,7 +134,7 @@ background-color: #404bbf;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    margin: auto;
 }
 
 .title {
@@ -422,15 +422,26 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     letter-spacing: 0.02em;
 }
 
-.overlay-image {
+/* .overlay-image {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+} */
+
+.our-portfolio-item {
     position: relative;
     overflow: hidden;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.overlay-image:hover .overlay {
+
+.our-portfolio-item:hover .overlay {
     transform: translateY(0);
-} 
+}
+
+/* .overlay-image:hover .overlay {
+    transform: translateY(0);
+}  */
 
 /* Modal */
 
@@ -458,8 +469,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-    padding: 72px 24px 24px 24px; 
+    pointer-events: none; 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -471,10 +481,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .modal {
     background-color: #fcfcfc;
-    /* border-radius: 4px; */
-    /* padding: ; */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    border: 1px solid #4d5ae5;
     border-radius: 4px;
     width: 408px;
     min-height: 584px;
@@ -490,7 +497,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 48px;
     background-color: #fcfcfc;
     font-weight: 500;
     line-height: 1.5; 
@@ -588,13 +594,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* .visually-hidden {
 } */
 
-
-/* .user-field:checked .user-agree > .agree-part {
-    background-color: #404bbf;
-    border: none; 
-    fill: #F4F4FD;
-} */
-
 .user-field:checked + .user-agree > .agree-part {
     background-color: #404BBF;
     border: none;
@@ -686,6 +685,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: #4D5AE5;
 }
 
+.checkbox-icon { 
+    fill: #f4f4fd;
+}
+
+
 /* footer */
 
 .footer {
@@ -771,9 +775,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-footer {
-    width: 1440px;
-    height: 312px;
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .subscribe-form {
@@ -788,7 +790,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
     margin-bottom: 16px;
 }
 
@@ -830,5 +832,6 @@ input::placeholder {
 
 .subscribe-icon {
     margin-left: 16px;
+    fill: #fff;
 }
 
